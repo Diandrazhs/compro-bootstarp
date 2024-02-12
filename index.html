@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Belajar Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css" rel="stylesheet">
+  </head>
+  <body style="background-color: #E3E1D9;">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-5" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://id.pinterest.com/">Source</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- CAROUSEL (Tayangan Slide) -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="height: 580px;">
+            <div class="carousel-item active">
+                <img src="  https://img.goodfon.com/original/1920x1080/a/cc/alois-arnegger-romantic.jpg" class="d-block w-100 vh-100" alt="gambar1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The First Page</h5>
+                    <p>Explore Some Art's by Famous Painting Artists</p>
+                </div>
+            </div>
+            <div class="carousel-item vh-100">
+                <img src="https://wallpapers.com/images/hd/beautiful-painting-2560-x-1600-wallpaper-u3sawrbyx8rrtq18.jpg" class="d-block w-100 vh-100" alt="gambar2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The Second Page</h5>
+                    <p>Explore Some Art's by Famous Painting Artists</p>
+                </div>
+            </div>
+            <div class="carousel-item vh-100">
+                <img src="https://i.ytimg.com/vi/QQDTy_ImzPk/maxresdefault.jpg" class="d-block w-100 vh-100" alt="gambar3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The Third Page</h5>
+                    <p>Explore Some Art's by Famous Painting Artists</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+      <!-- CARD -->
+    <div class="row gap-5 " style="justify-content: center; background-color: #E3E1D9;" >
+        <h2 class="text-center mb-3 my-5" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> The Famous Painter In The World</h2>
+        <div class="card my-2" style="width: 18rem; background-color: whitesmoke;">
+            <img src="https://i.pinimg.com/564x/a8/6d/6f/a86d6f3647e351fe9577a35d3146637b.jpg" class="card-img-top pt-3 px-1 " alt="img1" style="height: 365px;">
+            <div class="card-body">
+                <h5 class="card-title">Van Gogh</h5>
+                <p class="card-text">"If you hear a voice within you say 'you cannot paint,' then by all means paint, and that voice will be silenced."</p>
+                <a href="profil/profil1.html" class="btn btn-light" style="background-color: #B2A59B;">Profile</a>
+            </div>
+        </div>
+        <div class="card my-2" style="width: 18rem; background-color: whitesmoke;">
+            <img src="https://1.bp.blogspot.com/-8_2Ni7x5ah8/XpMVnMv2dGI/AAAAAAAAlaU/n7AqwPQ5xqwG7LwMKksBrfgBqpVatsQ8gCNcBGAsYHQ/s1600/Claude%2Bmonet%2B-%2BHeno%2BAirlangga%252C%2B101cm%2Bx%2B71cm%252C%2B2018.JPG" class="card-img-top pt-3 px-1" alt="img2" style="height: 365px;">
+            <div class="card-body">
+                <h5 class="card-title">Claude Monet</h5>
+                <p class="card-text">"For me, a landscape does not exist in its own right, since its appearance changes at every moment."</p>
+                <a href="/profil/profil2.html" class="btn btn-light" style="background-color: #B2A59B;">Profile</a>
+            </div>
+        </div>
+        <div class="card my-2" style="width: 18rem; background-color: whitesmoke;">
+            <img src="https://media.newyorker.com/photos/5abd7107e4b526446411b381/master/pass/180409_r31842.jpg" class="card-img-top pt-3 px-1" alt="img3" style="height: 365px;">
+            <div class="card-body">
+                <h5 class="card-title">Paul Cézanne</h5>
+                <p class="card-text">"Taste is the best judge, but it is rare. Art is accessible only to a very small number of individuals."</p>
+                <a href="/profil/profil3.html" class="btn btn-light" style="background-color: #B2A59B;">Profile</a>
+            </div>
+        </div>
+        <div class="card my-2" style="width: 18rem; background-color: whitesmoke;">
+            <img src="https://i.pinimg.com/564x/78/9f/b8/789fb8b3004e247fec45a3d788a9df0c.jpg" class="card-img-top pt-3 px-1" alt="img4" style="height: 365px;">
+            <div class="card-body">
+                <h5 class="card-title">Michelangelo Buonarroti</h5>
+                <p class="card-text">“A beautiful thing never gives so much pain as does failing to hear and see it.</p>
+                <a href="profil/profil4.html" class="btn btn-light" style="background-color: #B2A59B;">Profile</a>
+            </div>
+        </div>
+        <hr style="width: 84%; ;">
+    </div>
+
+    <!-- CARD FORM -->
+  <div id="contact" class="border mb-5 rounded" style="width: 86%; margin: auto; background-color: whitesmoke;">
+    <form class="container my-5" >
+       <h3 class="text-center" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact Us</h3>
+       <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email@gmail.com">
+       </div>
+       <div class="mb-3">
+          <label for="fullname" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullname" placeholder="John Doe">
+       </div>
+       <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" cols="30" rows="5" class="form-control" placeholder="Enter your message"></textarea>
+       </div>
+       <button type="submit" class="btn btn-primary" style="background-color: #B2A59B;">Submit</button>
+    </form>
+    </div>
+    <div class="card-footer text-muted text-center" style="background-color:#FBF9F1;">diandraamelia@gmail.com</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      
+    <!-- Tambahkan jQuery dan Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html> 
+
+
+
+
